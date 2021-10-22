@@ -1,0 +1,34 @@
+// Variablies
+$dark: #050505;
+$darkFaded: #050505bb;
+$headlg: 2.3rem;
+$headsm: 1.7rem;
+$sm: 0.8rem;
+$full: 100%;
+$transition: all 0.4s ease-in-out;
+$darkShadow: 1px 1px 3px rgba(17, 17, 17, 0.5),
+  -1px -1px 3px rgba(17, 17, 17, 0.5);
+$lightShadow: 1px 1px 3px rgba(255, 252, 252, 0.5),
+  -1px -1px 3px rgba(255, 253, 253, 0.5);
+$blur: blur(5px);
+
+// Mixins
+
+@mixin center($column) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $column;
+}
+@mixin around($column) {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: $column;
+}
+@mixin between($column) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: $column;
+}
